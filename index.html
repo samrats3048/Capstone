@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Personality Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header row with timer and theme toggle -->
+    <div class="header-bar">
+        <div id="timerDisplay"class="timer-display">Time: 0m 0s</div>
+        <button id="themeToggle">Toggle Theme</button>
+    </div>
+    <!-- name input -->
+    <div id="nameEntry" class="name-entry">
+        <label for="userName">Enter Thi Name:</label>
+        <input type="text" id="userName" placeholder="THI NAME-ITH">
+        <button id="startQuizBtn"> Start the quiz</button>
+    </div>
+    <!-- greeting if the user is returning -->
+    <div id="greeting" class="greeting" style="display:none;"></div>
+    
+    <!--! quiz output -->
+    <div id="quizContainer"></div>
+
+    <!-- navigation buttons -->
+    <div class="navigation" style="display:none;">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="submitBtn" disabled>Submit</button>
+    </div>
+    <!-- ^JS files -->
+    <script src="data.js"></script>
+    <script src="cookie.js"></script>
+    <script src="timer.js"></script>
+    <script src="quiz.js"></script>
+    <script src="username.js"></script>
+    <script src="theme.js"></script>
+
+</body>
+</html>
